@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "fontitalic";
+  src: url("../public/editorial-new-font-family-1719954939-0/PPEditorialNew-Ultralight-BF644b21500d0c0.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fontbold";
+  src: url("../public/TestFoundersGrotesk-Medium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fontlight";
+  src: url("../public/TestFoundersGrotesk-Light.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --main: #ff97dc;
+  --primary: #fffb00;
+  --white: #ffffff;
+}
+a {
+  border: none !important;
+  outline: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+*:focus,
+*:active {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.bg-main {
+  background-color: var(--main) !important;
+}
+.bg-primarys {
+  background-color: var(--primary) !important;
+}
+.bg-whiter {
+  background-color: var(--white) !important;
+}
+.text-main {
+  color: var(--main) !important;
+}
+.text-primarys {
+  color: var(--primary) !important;
+}
+.text-whiter {
+  color: var(--white) !important;
+}
+.border-main {
+  border: 2px solid var(--main) !important;
+}
+.border-primarys {
+  border: 2px solid var(--primary) !important;
+}
+.border-whiter {
+  border: 2px solid var(--white) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fontitalic {
+  font-family: "fontitalic";
+}
+.fontbold {
+  font-family: "fontbold";
+}
+.fontlight {
+  font-family: "fontlight";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.filterr {
+  backdrop-filter: blur(100px);
 }
